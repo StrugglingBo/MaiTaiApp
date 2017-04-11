@@ -1,0 +1,105 @@
+/*��ʼ����ǩ��ʽ*/
+html,body,div,header,footer,head,input,nav,footer,ul,li,a,p,ol,h1,h2,h3,h4,h5,h6,img,dt,dd{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent; /*清除点击默认的高亮效果*/
+    box-sizing: border-box;
+}
+input,textarea{
+    border: none; /*ȥ���߿���ʽ��input��div��a��button�ȶ����б߿���ʽ*/
+    resize: none; /*不允许伸缩*/
+    outline: none; /*清除默认选中框*/
+    -webkit-appearance: none; /*清除浏览器默认的样式*/
+    outline-style:none; /*ȥ��ԭ�е������������ʽ*/
+}
+ul{
+    list-style: none; /*ȥ��li��ǩ�ĵ�*/
+
+}
+img
+{
+    border:0;
+    vertical-align:middle;
+}  /*  ȥ��ͼƬ�Ͳ�Ĭ�ϵ�3���ؿհ׷�϶*/
+
+a{
+    text-decoration: none; /*ȥ��a��ǩ������»���*/
+}
+
+/*清除浮动*/
+/*.clearfix:before,.clearfix:after*/
+/*{*/
+    /*content:"";*/
+    /*display:block;*/
+    /*height:0;*/
+    /*line-height:0;*/
+    /*visibility: hidden;*/
+/*}*/
+/*.clearfix:after*/
+/*{*/
+    /*clear:both;*/
+/*}*/
+/*.clearfix*/
+/*{*/
+    /**zoom:1;!*IE/7/6*!*/
+/*}*/
+
+a {color:#666; text-decoration:none; }
+a:hover{color:#C81623;}
+
+
+/*定义以icon开头的class的样式都设置成这个样式*/
+/**[class^="icon"]{*/
+    /*background: url(../images/sprites.png) no-repeat;*/
+    /*background-size: 200px 200px;*/
+/*}*/
+
+
+/*ͷ��ͨ��*/
+.top_bar{
+    position: absolute;
+    height: 44px;
+    background: url(../images/header-bg.png) repeat-x;
+    background-size: 1px 44px;
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+/*���ذ�ť*/
+.top_bar .icon_back{
+    background-position: -20px 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 11px;
+}
+
+.top_bar form{
+    /*width: 100%;*/
+    height: 44px;
+    padding: 5px 40px;
+}
+.top_bar form input{
+    width: 100%;
+    height: 33px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+
+.top_bar h3{
+    text-align: center;
+    line-height: 44px;
+    font-size: 16px;
+    font-weight: inherit;
+}
+
+.top_bar .icon_menu{
+    background-position: -60px 0;
+    width: 20px;
+    height: 24px;
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
