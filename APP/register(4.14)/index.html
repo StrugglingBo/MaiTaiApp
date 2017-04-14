@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="yes" name="apple-touch-fullscreen">
+    <meta content="telephone=no,email=no" name="format-detection">
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/register.css"/>
+    <link rel="stylesheet" href="css/validate.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/button.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    <script src="js/zepto.js"></script>
+    <!--<script src="js/zepto.all.js"></script>-->
+    <script src="js/touch.js"></script>
+    <script type="text/javascript" src="js/zepto-mvalidate.js"></script>
+    <script src="js/register.js"></script>
+    <title>注册</title>
+</head>
+<body style="font-size: 24px;">
+<!--头部导航栏-->
+    <!--<header class="navBar">-->
+        <!--<div class="head">-->
+            <!--<div class="navigation">-->
+                <!--<div class="navigation-return">-->
+                    <!--<img src="img/return.png" alt=""/>-->
+                <!--</div>-->
+                <!--<div class="registerText"><p>注册</p></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</header>-->
+<!--中间部分-->
+    <nav class="nav" id="Dform">
+
+        <!--麦买购login    -->
+        <div class="login-img">
+            <div class="loginImg"><img src="img/logo_go.png" alt=""/></div>
+        </div>
+        <!--form表单-->
+        <form class="zform zform-radius" id="form1">
+            <fieldset class="zform-fieldset">
+                <div class="zform-control">
+                    <div class="control-field">
+                        <input type="text" class="field-text" placeholder="手机号码" data-validate="phone" data-describedby="phone-description" name="phone"  id="telphone"  data-descriptions="telphone">
+                    </div>
+                </div>
+
+                <div class="zform-control">
+                    <div class="control-field">
+                        <div class="field-textss">
+                            <div class="field-texts1">
+                                <input type="text" class="" placeholder="请输入短信验证码" name="verify" id="phoneyzm" data-required="true" data-descriptions="phoneyzm" data-conditional="phoneyzm">
+                            </div>
+                            <div class="field-texts2 yzm" id="btn-33" >
+                                <!--onclick="clickButton(this)"-->
+                                <input type="button" class="zbtn zbtn-primary zbtn-full zbtn-lg" id="btn-3" value="获取短信验证码" data-validate="text" data-validate="verify" data-describedby="phone-verify">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="zform-control">
+                    <div class="control-field">
+                        <input type="password" id="pwd" class="field-text" placeholder="请设置6-22位登录密码" data-validate="password" data-required="true" data-descriptions="passwords" name="password">
+                    </div>
+                </div>
+                <div class="zform-control">
+                    <div class="control-field">
+                        <input type="password" id="confirmpwd" class="field-text"  placeholder="请再次输入密码" data-required="true" data-descriptions="confirmpassword" data-conditional="confirmpwd">
+                    </div>
+                </div>
+                <div class="zform-control" style="margin-bottom: 0.425rem !important;">
+                    <div class="control-field">
+                        <input type="text" class="field-text" placeholder="请输入推荐人手机号" value="18123654125" id="joinphone" data-validate="tuiphone" data-describedby="phone-description" name="tuiphone">
+                    </div>
+                </div>
+                <div class="zform-control" style="width:100vw;height: 20px;margin-bottom: 1px !important;">
+                    <div class="control-field">
+                        <div class="field-texts" style="height: 10px !important;">
+                            <div class="fields" style="font-size: 1px !important;">
+                                <p>注册即视为同意</p>
+                                <a href="">《麦买购用户注册协议》</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="submit">
+                <button id="btn" type="submit" class="zbtn zbtn-primary zbtn-full zbtn-lg">注册</button>
+            </div>
+        </form>
+    </nav>
+
+
+    <!--注册遮罩层-->
+    <div id="zeZhao" style="position: absolute;top: 0;right: 0;bottom: 0;left: 0;background-color: rgba(0,0,0,0.2);display: none;">
+        <div class="demo-bgfff pd101">
+            <!--onsubmit="return check()"-->
+            <div class="zform zform-radius" id="form">
+                <fieldset class="zform-fieldset1">
+                    <div class="control-field">
+                        <div class="field-shade">
+                            <div class="field-shadeText"><p style="text-align:center;line-height: 2rem;font-size: 1.25rem;font-family: PingFangSC-Regular;color: #333333;">请输入图片验证码</p></div>
+                        </div>
+                    </div>
+                    <div class="control-field">
+                        <div class="field-shade">
+                            <div class="field-shadeText1" id="errorWarning"><p style="text-align:center;line-height: 2rem;font-size: 1.08333rem;color: #FF0000;font-family: PingFangSC-Regular;">输入有误，请重新输入</p></div>
+                        </div>
+                    </div>
+
+                    <div class="zform-control">
+                        <div class="control-field">
+                            <div class="field-textsss">
+                                <div class="field-textss1">
+                                    <input type="text" class="" placeholder="请输入验证码" id="vcode" value="请输入验证码" onfocus="this.value=''" onblur="if(this.value=='')this.value='请输入验证码'">
+                                </div>
+                                <div class="field-textss2">
+
+                                    <!--<div onclick="clickButton(this)" class="zbtn1  zbtn-full1 zbtn-lg1">-->
+                                        <div class="map"><span style="width: 100%;height:100%;margin:0px 8px;line-height: 40px;" id="code1"></span></div>
+                                        <div style="float: right;" id="code" title="看不清，换一张">
+                                            <img src="img/break.png" alt="" style="width: 44px;height: 44px;"/>
+                                        </div>
+                                    <!--</div>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <!--onclick="clickButton(this)"-->
+                <!--<div onclick="clickButton(this)">-->
+                    <input type="button" id="verify" value="确定" class="zbtn zbtn-primary1 zbtn-full zbtn-lg" style="margin-bottom: 0.91666rem;">
+                <!--</div>-->
+                    <input type="button" id="cancel" value="取消" class="zbtn zbtn-primary1 zbtn-full zbtn-lg">
+
+            </div>
+    </div>
+    </div>
+
+</body>
+</html>

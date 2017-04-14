@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*导航栏*/
+
+.nav .login-img{
+    width: 100%;
+    /*height: 4.1666rem;*/
+    margin-top: 1.5rem;
+}
+.nav .login-img .loginImg{
+    width: 139px;
+    height: 100%;
+    margin: 0 auto;
+}
+.nav .login-img img{
+    width: 139px;
+    height: 100%;
+}
+
+
+.navBar{
+    margin: 0 auto;
+}
+
+.head{
+    width: 100%;
+    height: auto;
+    z-index: 33;
+}
+.head .navigation{
+    height: 3.6667rem;
+    background: #c11920;
+}
+/*���ذ�ť*/
+.head .navigation .navigation-return{
+    width: 1rem;
+    height: 2rem;
+    position: absolute;
+    /*background: blue;*/
+    margin: 0.6998rem 1.6667rem;
+}
+.head .navigation .navigation-return img{
+    width: 1rem;
+    height: 1.8333rem;
+}
+.head .navigation .registerText{
+    width: 100%;
+    height:3.6667rem;
+    position: absolute;
+    margin: 0 auto;
+}
+.head .navigation .registerText p{
+    color:white;
+    text-align:center;
+    line-height: 3.6667rem;
+    font-size: 1.5rem;
+    font-family: PingFangSC-Regular;
+}
+
+
+
