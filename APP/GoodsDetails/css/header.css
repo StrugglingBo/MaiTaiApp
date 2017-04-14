@@ -1,0 +1,891 @@
+/*ͷ����ʽ*/
+.header{
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+/*顶部导航按钮*/
+.head{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    margin-top: 1.083333rem;
+    z-index: 33;
+}
+.head .navigation{
+    max-width: 640px;
+    min-width: 280px;
+    height: 1.3333rem;
+    /*background: red;*/
+    position: relative;
+}
+
+/*导航栏左侧按钮*/
+.head .navigation .navigation-back{
+    background:url("../images/dp_btn_return@2x.png") no-repeat;
+    position: absolute;
+    /*margin-top:1.08333rem;*/
+    /*margin-left: 0.71428rem;*/
+    height: 1.3333rem;
+    width:1.3333rem;
+    margin-left: 0.41666rem;
+    background-size:1.3333rem 1.3333rem; /*����ͼƬ�Ĵ�С����ͼƬ��СΪԭ����2����ԭͼ��400px*400px��*/
+}
+/*导航栏右侧两个按钮*/
+.navigationS{
+    width:3.151666rem;
+    height: 100%;
+    position: absolute;
+    right:0;
+    /*background: red;*/
+}
+
+/*左侧按钮*/
+.navigationS .left{
+    height: 1.3333rem;
+    width: 1.3333rem;
+    display: inline-block;
+}
+.navigationS .left img {
+    height: 1.3333rem;
+    width: 1.3333rem;
+}
+/*右侧按钮*/
+.navigationS .right{
+    height: 1.3333rem;
+    width: 1.3333rem;
+    /*float: left;*/
+    display: inline-block;
+    position: absolute;
+    margin: 0 0.285rem;
+    /*margin-left: 0.625rem;*/
+}
+.navigationS .right img {
+    height: 1.3333rem;
+    width: 1.3333rem;
+}
+
+/*头部下拉菜单*/
+.menu{
+    width:100%;
+    height: 5.58333rem;
+    position: fixed;
+    z-index: 111;
+    margin-top: 2.6666rem;
+    display: none;
+}
+.menu .menus{
+    max-width: 640px;
+    min-width: 320px;
+    height: 100%;
+    /*background: yellow;*/
+    margin:0 auto;
+
+}
+.menu .menus .menuS{
+    width: 6.8rem;
+    height: 100%;
+    /*background:pink;*/
+    float: right;
+}
+.menu .menus .menuS .menuSS{
+    width: 6.25rem;
+    height: 100%;
+    border-radius: 2px;
+    margin:0 auto;
+    /*background: #929292;*/
+    background: rgba(0,0,0,0.3);
+}
+.menu .menus .menuS .menuSS ul{
+    width: 100%;
+    height: 100%;
+}
+.menu .menus .menuS .menuSS ul li .menuUnderline{
+    width: 100%;
+    height: 1.86111rem;
+    position: relative;
+    /*background:#EEEEEE;*/
+    margin: 0 auto;
+    border-bottom: 1px solid #ffffff;
+}
+.menu .menus .menuS .menuSS ul li .menuUnderline .menuContent{
+    width: 90%;
+    height: 1.2rem;
+    /*background: blue;*/
+    position: absolute;
+    margin: 0.3rem 5%;
+}
+.menu .menus .menuS .menuSS ul li .menuUnderline .menuContent .img{
+    width: 0.875rem;
+    height:0.83333rem;
+    /*background: red;*/
+    margin-top: 0.12208rem;
+    position: absolute;
+
+}
+.menu .menus .menuS .menuSS ul li .menuUnderline .menuContent .img img{
+    width:  0.875rem;
+    height:0.83333rem;
+    display: block;
+}
+.menu .menus .menuS .menuSS ul li .menuUnderline .menuContent .text{
+    width: 100%;
+    height:100%;
+    /*background: yellow;*/
+    position: absolute;
+    margin-left: 25%;
+}
+.menu .menus .menuS .menuSS ul li .menuUnderline .menuContent .text span{
+    font-size: 0.58333rem;
+    display: block;
+    color: #ffffff;
+
+    /*margin:0 auto;*/
+}
+
+
+
+.slide{
+    position: relative;
+    max-width: 640px;
+    /*vw解决商品详情页自适应banner正方形布局问题*/
+    height: 100vw;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slide:after{
+    content: '';
+    display: block;
+    width: 100%;
+    padding-top: 50%;
+}
+.slide ul{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.slide li{
+    list-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+/* 解决js阻塞页面显示首屏 */
+.slide li:first-child{
+    z-index: 1;
+}
+.slide li img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/*banner小圆点*/
+.center_img .dot{
+    position: absolute;
+    margin-left: 40%;
+    bottom: 10px;
+    z-index: 5;
+    font-size: 0;
+}
+.center_img .dot span{
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 5px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.center_img .dot .cur{
+    background-color: #c11920;
+}
+
+/*�ֲ�ͼ�ϵ�СԲ��*/
+.center_img .clearfix{
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -55px;
+}
+.clearfix li{
+    width: 6px;
+    height: 6px;
+    border: 1px solid #ffffff;
+    border-radius:3px;
+    float: left;
+    margin-left: 6px;
+    /*cursor: pointer;*/
+}
+
+
+
+
+
+/*��Ʒ����*/
+.header .shop_class{
+    width: 100%;
+    height: 260px;
+    background:#EEEEEE;
+    position: relative;
+}
+.header .shop_class .shop_class_S{
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    background: white;
+}
+.header .shop_class .shop_class_S .text{
+    width: 100%;
+    height: 38%;
+    /*background: yellow;*/
+    position: relative;
+}
+.header .shop_class .shop_class_S .text .text_top{
+    width: 98%;
+    height: 95%;
+    /*background: white;*/
+    margin: 0.1rem;
+    /*margin-top: 0.1rem;*/
+    position: absolute;
+}
+.header .shop_class .shop_class_S .text .text_top p{
+    font-size: 1.2366rem;
+    color: #3e3a39;
+    text-align: left;
+    overflow: hidden; /*超出的文本隐藏*/
+    text-overflow: ellipsis; /*溢出用省略号显示*/
+    /*white-space: nowrap; */ /*单行文本的溢出显示省略号*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    margin-left: 0.41666rem;
+}
+.header .shop_class .shop_class_S .money{
+    width: 100%;
+    height: 28%;
+    /*background: blue;*/
+    /*position: relative;*/
+}
+.header .shop_class .shop_class_S .money .moneyS{
+    width: 98%;
+    height: 100%;
+    /*background: peru;*/
+    margin:0 auto;
+}
+.header .shop_class .shop_class_S .money .moneyS .money_now{
+    /*width:7rem;*/
+    height: 100%;
+    /*background: white;*/
+    margin:0 auto;
+    display: inline-block;
+    float: left;
+}
+.header .shop_class .shop_class_S .money .moneyS .money_now p{
+   font-size: 2rem;
+    color: #c11920;
+    text-align: left;
+}
+.header .shop_class .shop_class_S .money .moneyS .money_before{
+    /*width:6.5rem;*/
+    height: 100%;
+    /*background: red;*/
+    margin:0 auto;
+    display: inline-block;
+    margin-left: 0.4166rem;
+}
+.header .shop_class .shop_class_S .money .moneyS .money_before p{
+    font-size: 0.9rem;
+    color: #888888;
+    line-height: 50px;
+    text-align: right;
+}
+.header .shop_class .shop_class_S .options{
+    width: 100%;
+    height: 30%;
+    /*background: lime;*/
+}
+.header .shop_class .shop_class_S .options .options_S{
+    width: 94%;
+    height: 100%;
+    /*background: pink;*/
+    margin:0 auto;
+    position: relative;
+}
+.header .shop_class .shop_class_S .options .options_S .options_Ss{
+    width: 70%;
+    height: 80%;
+    /*background: lemonchiffon;*/
+    margin:0.3rem;
+    position: absolute;
+}
+.header .shop_class .shop_class_S .options .options_S .options_Ss ul{
+    width:100%;
+    height:100%;
+}
+.header .shop_class .shop_class_S .options .options_S .options_Ss ul li{
+    float: left;
+    width:20%;
+    height:80%;
+}
+.header .shop_class .shop_class_S .options .options_S .options_Ss ul li .divs{
+    width:100%;
+    height:100%;
+    /*background-color: #f25454;*/
+    margin: 0.2rem auto;
+}
+.header .shop_class .shop_class_S .options .options_S .options_Ss ul li .divs .divS{
+    width:80%;
+    height:80%;
+    background-color: #53d1e8;
+    margin: 0.2rem auto;
+    border-radius: 4px;
+}
+.header .shop_class .shop_class_S .options .options_S .options_Ss ul li .divs .divS p{
+   text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+
+
+
+.header .shop_class .shop_class_S .hint{
+    width: 100%;
+    height: 20%;
+    background: white;
+}
+.header .shop_class .shop_class_S .hint .hint_text{
+    width: 98%;
+    height: 80%;
+    /*background: white;*/
+    margin:0.2rem 0 0 0.2rem;
+    position: relative;
+    display: inline-block;
+}
+.header .shop_class .shop_class_S .hint .hint_text div{
+    width: 100%;
+    height: 100%;
+}
+.header .shop_class .shop_class_S .hint .hint_text div .text{
+    width: 92%;
+    height: 100%;
+    /*background: blue;*/
+    display: inline-block;
+    /*position: absolute;*/
+}
+.header .shop_class .shop_class_S .hint .hint_text div .text ul{
+    width: 100%;
+    height: 100%;
+}
+.header .shop_class .shop_class_S .hint .hint_text div .text li{
+    width: 43%;
+    height: 100%;
+    display: inline-block;
+}
+.header .shop_class .shop_class_S .hint .hint_text div .text li .text_s{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /*background:salmon;*/
+    display: inline-block;
+    /*margin-left: 0.6rem;*/
+}
+.header .shop_class .shop_class_S .hint .hint_text div .text li .text_s .text_s_left{
+    width: 0.8rem;
+    height: 0.8rem;
+    /*background: yellow;*/
+    display: inline-block;
+    margin: 0.35rem 0 0.2rem 0;
+    border-radius: 1rem;
+}
+.header .shop_class .shop_class_S .hint .hint_text div .text li .text_s .text_s_left img{
+    width: 0.8rem;
+    height: 0.8rem;
+    position: absolute;
+}
+.header .shop_class .shop_class_S .hint .hint_text div .text li .text_s .text_s_right{
+    height: 100%;
+    width: 100%;
+    /*background: seagreen;*/
+    display: inline-block;
+    position: absolute;
+    margin: 0 0 0 0.2rem;
+}
+.header .shop_class .shop_class_S .hint .hint_text div .text li .text_s .text_s_right p{
+    height: 100%;
+    width: 100%;
+    font-size: 0.5rem;
+    color: #000000;
+    display: inline-block;
+}
+
+.header .shop_class .shop_class_S .hint .hint_text div .icon{
+    width: 6.2%;
+    height: 100%;
+    /*background: red;*/
+    display: inline-block;
+    position: absolute;
+    right:0;
+    margin-right: 0.08rem;
+    /*margin-top: 0;*/
+}
+.header .shop_class .shop_class_S .hint .hint_text div .icon img{
+    /*margin:0.4rem;*/
+}
+
+
+
+
+
+.header .shop_class .shop_class_S .productParameter{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    margin-top: 0.3rem;
+    background: white;
+}
+.header .shop_class .shop_class_S .productParameter .productParameterText{
+    width: 98%;
+    height: 80%;
+    /*background: yellow;*/
+    margin:0 0.2rem auto;
+    position: relative;
+}
+.header .shop_class .shop_class_S .productParameter .productParameterText div{
+    width: 100%;
+    height: 100%;
+}
+.header .shop_class .shop_class_S .productParameter .productParameterText div .text{
+    width: 28%;
+    height: 100%;
+    /*background: blue;*/
+    display: inline-block;
+    /*position: absolute;*/
+}
+.header .shop_class .shop_class_S .productParameter .productParameterText div .text p{
+    font-size: 1.3333rem;
+    color: #000000;
+}
+.header .shop_class .shop_class_S .productParameter .productParameterText div .icon{
+    width: 8%;
+    height: 100%;
+    /*background: red;*/
+    display: inline-block;
+    position: absolute;
+    right:0;
+}
+.header .shop_class .shop_class_S .productParameter .productParameterText div .icon img{
+    margin:0.1rem 0 0.1rem 0.4rem;
+}
+
+.shop_class .details{
+    width: 96%;
+    height: 22px;
+    /*background:white;*/
+    position: absolute;
+    left: 2%;
+    bottom: 12px;
+    border-radius: 8px;
+}
+.shop_class .details .details_ico{
+    width:12.5rem;
+    height:100%;
+    margin:0 auto;
+}
+.shop_class .details .details_ico img{
+    width:100%;
+    height:100%;
+}
+
+/*商品详情*/
+.nav{
+    max-width: 640px;
+    min-width: 320px;
+    height:100%;
+    background:#EEEEEE;
+}
+.nav .shop_ss{
+    height:100%;
+    position: relative;
+}
+.nav .shop_ss .shop_img{
+    max-width: 640px !important;
+}
+.nav .shop_ss .shop_img img{
+    max-width: 100vw !important;
+}
+
+/*评价*/
+.nav .seckill_top{
+    width: 96%;
+    height: 25px;
+    /*background: yellow;*/
+    margin:0.5rem auto;
+}
+.nav .seckill_top .seckill_img{
+    width: 12.5rem;
+    height: 100%;
+    margin:0 auto;
+}
+.nav .seckill_top img{
+    width:100%;
+    height: 100%;
+}
+
+/*评价内容部分*/
+.product_box{
+    background: #fff;
+    box-shadow: 0 0 1px 1px #e0e0e0;
+}
+.product_box .product_top{
+    position: relative;
+    width: 100%;
+    height: 2.8rem;
+    margin-top: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    /*background: yellow;*/
+}
+.product_box .product_top .product_userinfo{
+    width:98%;
+    height:94%;
+    background: white;
+    position: absolute;
+    margin: 0.1rem 0.3rem;
+    border-bottom: 1px silver;
+    /*border-bottom-width:1.5rem;*/
+}
+.product_box .product_top .product_userinfo .product_userinfo_left{
+    /*width:65%;*/
+    height:90%;
+    /*background: red;*/
+    position: relative;
+    left:0;
+    margin-top: 0.15rem;
+    display: inline-block;
+}
+.product_box .product_top .product_userinfo .product_userinfo_left .userinfo_leftOne{
+    width:2.25rem;
+    height:2.25rem;
+    /*background: pink;*/
+    display: inline-block;
+    margin:0.03222rem auto;
+    float: left;
+}
+.product_box .product_top .product_userinfo .product_userinfo_left .userinfo_leftOne img{
+    width:100%;
+    height:100%;
+}
+.product_box .product_top .product_userinfo .product_userinfo_left .userinfo_leftTwo{
+    /*width:6.5rem;*/
+    height:2.25rem;
+    background: white;
+    display: inline-block;
+    margin:0.03222rem 0.41666rem;
+    display: inline-block;
+    /*position: absolute;*/
+
+}
+.product_box .product_top .product_userinfo .product_userinfo_left .userinfo_leftTwo p{
+    font-size: 1.08333rem !important;
+    color: #000;
+    margin:0.4rem auto;
+    display: inline-block;
+}
+.product_box .product_top .product_userinfo .product_userinfo_left .userinfo_leftThree{
+    width:3.04166rem;
+    height:1.6rem;
+    /*background: darkblue;*/
+    display: inline-block;
+    margin:0.4rem auto;
+    display: inline-block;
+    /*position: absolute;*/
+    /*right:0;*/
+}
+.product_box .product_top .product_userinfo .product_userinfo_left .userinfo_leftThree img{
+    width:100%;
+    height:100%;
+    display: inline-block;
+
+}
+
+
+.product_box .product_top .product_userinfo .product_userinfo_right{
+    /*width:26%;*/
+    height:90%;
+    /*background: blue;*/
+    float: right;
+    margin-top:0.15rem;
+    display: inline-block;
+}
+.product_box .product_top .product_userinfo .product_userinfo_right p{
+    color: #888888;
+    font-size:1rem;
+    text-align:center;
+    line-height:2.3rem;
+}
+
+
+
+/*评价部分*/
+.product_box .product_bottom{
+    background: white;
+    width:100%;
+    /*height:225px;*/
+    position: relative;
+}
+.product_box .product_bottom ul{
+    width:100%;
+    height:100%;
+}
+.product_box .product_bottom ul li .evaluateStar{
+    width:90%;
+    height:1.1666rem;
+    /*background: #000;*/
+    margin: 0.2166rem 0 0 0.4rem;
+    position: absolute;
+    display: inline-block;
+}
+.product_box .product_bottom ul li .evaluateStar .evaluateStarS{
+    width:80%;
+    height:100%;
+    /*background: #82d8f5;*/
+    display: inline-block;
+}
+.product_box .product_bottom ul li .evaluateStar .evaluateStarS li{
+    width: 1.25rem;
+    height:100%;
+    /*background: #d0e9c6;*/
+    display: inline-block;
+}
+.product_box .product_bottom ul li .evaluateStar .evaluateStarS li img{
+    width: 100%;
+    height:100%;
+    display: inline-block;
+}
+.product_box .product_bottom ul li .evaluateContent{
+    width:96%;
+    /*height:21.4666rem;*/
+    /*background: aquamarine;*/
+    margin: 1.7rem 0 0 0.4rem;
+    position: relative;
+    display: inline-block;
+}
+.product_box .product_bottom ul li .evaluateContent .evaluateText{
+    width:97.6%;
+    /*height:12rem;*/
+    /*background: yellow;*/
+    display: inline-block;
+    margin-left: 0.54166rem;
+    /*overflow-y: scroll;*/
+}
+.product_box .product_bottom ul li .evaluateContent .evaluateText p{
+    width:100%;
+    display:block;
+    /*设置自动换行*/
+    word-wrap: break-word;
+    word-break: normal;
+}
+.product_box .product_bottom ul li .evaluateContent .evaluateImg{
+    width:98%;
+    height:5.6rem;
+    /*background: pink;*/
+    display: inline-block;
+    margin:0.2rem 0 0 0.4rem;
+}
+.product_box .product_bottom ul li .evaluateContent .evaluateImg ul{
+    width:100%;
+    height:100%;
+}
+.product_box .product_bottom ul li .evaluateContent .evaluateImg ul li{
+    width:5.5rem;
+    height: 5.5rem;
+    /*background: blue;*/
+    margin-right: 0.7333rem;
+    float: left;
+}
+.product_box .product_bottom ul li .evaluateContent .evaluateImg ul li img{
+    width:5.5rem;
+    height:5.5rem;
+}
+.product_box .product_bottom ul li .evaluateContent .commodityParameters{
+    width:100%;
+    height:3rem;
+    /*background: darkviolet;*/
+    display: inline-block;
+    bottom: 0;
+}
+.product_box .product_bottom ul li .evaluateContent .commodityParameters .commodityParameters_text{
+    width:75%;
+    height:1.5rem;
+    /*background: yellow;*/
+    display: inline-block;
+    margin-left: 0.44166rem;
+}
+.product_box .product_bottom ul li .evaluateContent .commodityParameters .commodityParameters_text p{
+    font-size:1rem;
+    color: #c9c9c9;
+    /*最多只显示一行，超出部分用省略号代替*/
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp:1;
+    overflow: hidden;
+}
+.product_box .product_bottom ul li .evaluateContent .commodityParameters .commodityParameters_time{
+    width:80%;
+    height:1.5rem;
+    /*background: white;*/
+    display: inline-block;
+    margin-left: 0.44166rem;
+    bottom: 0;
+}
+.product_box .product_bottom ul li .evaluateContent .commodityParameters .commodityParameters_time p{
+    font-size:1rem;
+    color: #c9c9c9;
+    display: inline-block;
+}
+.product_box .product_bottom ul li .evaluateContent .commodityParameters .commodityParameters_time .commodityParameters_imgText{
+    width:3rem;
+    height:1.5rem;
+    display: inline-block;
+    /*background: yellow;*/
+    position: absolute;
+    right:0;
+}
+.product_box .product_bottom ul li .evaluateContent .commodityParameters .commodityParameters_time .commodityParameters_imgText img{
+    width:1.25rem;
+    height:1rem;
+    display: inline-block;
+    margin-right: 0;
+}
+.product_box .product_bottom ul li .evaluateContent .commodityParameters .commodityParameters_time .commodityParameters_imgText p{
+    font-size:0.54166rem;
+    color: #c9c9c9;
+}
+
+
+
+/*底部导航栏固定定位*/
+.footer{
+    width: 100%;
+    /*height: 2.04166rem;*/
+    background: white;
+    position: fixed;
+    bottom: 0;
+    /*background: yellow;*/
+}
+.footer .footer_ul{
+    height: 100%;
+    width:100%;
+    /*border-top: 2px solid #e0e0e0;*/
+}
+/*底部左侧*/
+.footer .footer_ul .footer_left{
+    width:38.666%;
+    height:100%;
+    /*background: red;*/
+    display: inline-block;
+    float: left;
+}
+.footer .footer_ul .footer_left li{
+    width: 50%;
+    height: 100%;
+    /*background: pink;*/
+    display: inline-block;
+    float: left;
+}
+.footer .footer_ul .footer_left li a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.footer .footer_ul .footer_left li a .imgs{
+    width: 0.875rem;
+    height:0.70833rem;
+    margin:0.48rem auto 0;
+}
+.footer .footer_ul .footer_left li a .imgs .radius{
+    width: 0.6rem;
+    height:0.6rem;
+    background: red;
+    position: absolute;
+    border-radius: 0.4rem;
+    display: inline-block;
+    margin:0rem 0 0 0.9rem;
+    display: none;
+}
+.footer .footer_ul .footer_left li a .imgs .radius p{
+    width: 0.5rem;
+    height:0.5rem;
+    margin:0 auto;
+    font-size:12px;
+    display: inline-block;
+    /*color: white;*/
+}
+.footer .footer_ul .footer_left li a .imgs img{
+    width: 0.875rem;
+    height:0.70833rem;
+    margin-top: -0.63333rem;
+    display: inline-block;
+}
+.footer .footer_ul .footer_left li a .txt{
+    width:100%;
+    height:0.8378rem;
+    /*background: blue;*/
+    margin-top: 0.2180833rem;
+}
+.footer .footer_ul .footer_left li a .txt .txts{
+    width: 2.6rem;
+    height:100%;
+    font-size: 0.45833rem;
+    margin:0 auto;
+    display:block;
+    /*background: red;*/
+}
+.footer .footer_ul .footer_left li a .txt .txts p{
+    font-size: 0.45833rem;
+    text-align: center;
+    color: #888888;
+}
+/*底部右侧*/
+.footer .footer_ul .footer_right{
+    width:61.334%;
+    height:100%;
+    display: inline-block;
+    /*background: blue;*/
+    position: absolute;
+}
+.footer .footer_ul .footer_right li{
+    width:50%;
+    height:100%;
+    display: inline-block;
+    background: #ec6941;
+    float: left;
+}
+.footer .footer_ul .footer_right li a{
+    width:100%;
+    height:100%;
+    display: inline-block;
+}
+.footer .footer_ul .footer_right li a .join{
+    width:100%;
+    height:60%;
+    margin:0.420833rem auto;
+    /*background: red;*/
+}
+.footer .footer_ul .footer_right li a .join p{
+    font-size: 0.75rem;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 0.8rem;
+}
